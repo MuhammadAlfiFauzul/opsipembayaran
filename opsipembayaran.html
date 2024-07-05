@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Payment Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-container">
+        <nav class="payment-nav">
+            <button class="tablinks active" onclick="openTab(event, 'qris')">QRIS</button>
+            <button class="tablinks" onclick="openTab(event, 'bank')">Bank</button>
+            <button class="tablinks" onclick="openTab(event, 'minimarket')">Minimarket</button>
+            <button class="tablinks" onclick="openTab(event, 'virtual-account-bank')">Virtual Account Bank</button>
+        </nav>
+        <div id="qris" class="payment-options active">
+            <div class="payment-group">
+                <h2>QRIS</h2>
+                <div class="payment-option">
+                    <input type="radio" id="dana" name="payment-method" checked>
+                    <label for="dana">
+                        <img src="dana.png" alt="DANA">
+                        DANA
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bri" name="payment-method">
+                    <label for="bri">
+                        <img src="https://via.placeholder.com/40" alt="BRI">
+                        BRI
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="virtual-account" name="payment-method">
+                    <label for="virtual-account">
+                        <img src="https://via.placeholder.com/40" alt="Virtual Account">
+                        Virtual Account
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="bank" class="payment-options">
+            <div class="payment-group">
+                <h2>Bank</h2>
+                <div class="payment-option">
+                    <input type="radio" id="bca" name="payment-method">
+                    <label for="bca">
+                        <img src="https://via.placeholder.com/40" alt="BCA">
+                        BCA
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bri-bank" name="payment-method">
+                    <label for="bri-bank">
+                        <img src="https://via.placeholder.com/40" alt="BRI">
+                        BRI
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bni" name="payment-method">
+                    <label for="bni">
+                        <img src="https://via.placeholder.com/40" alt="BNI">
+                        BNI
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="minimarket" class="payment-options">
+            <div class="payment-group">
+                <h2>Minimarket</h2>
+                <div class="payment-option">
+                    <input type="radio" id="indomaret" name="payment-method">
+                    <label for="indomaret">
+                        <img src="https://via.placeholder.com/40" alt="Indomaret">
+                        Indomaret
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="alfamart" name="payment-method">
+                    <label for="alfamart">
+                        <img src="https://via.placeholder.com/40" alt="Alfamart">
+                        Alfamart
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="circlek" name="payment-method">
+                    <label for="circlek">
+                        <img src="https://via.placeholder.com/40" alt="CircleK">
+                        CircleK
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="virtual-account-bank" class="payment-options">
+            <div class="payment-group">
+                <h2>Virtual Account Bank</h2>
+                <div class="payment-option">
+                    <input type="radio" id="mandiri-va" name="payment-method">
+                    <label for="mandiri-va">
+                        <img src="https://via.placeholder.com/40" alt="Mandiri VA">
+                        Mandiri VA
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bca-va" name="payment-method">
+                    <label for="bca-va">
+                        <img src="https://via.placeholder.com/40" alt="BCAVA">
+BCA VA
+</label>
+</div>
+<div class="payment-option">
+<input type="radio" id="bri-va" name="payment-method">
+<label for="bri-va">
+<img src="https://via.placeholder.com/40" alt="BRI VA">
+BRI VA
+</label>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+```

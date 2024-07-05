@@ -1,0 +1,110 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.payment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.payment-nav {
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+.payment-nav button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.payment-nav button:hover {
+    background-color: #ddd;
+}
+
+.payment-nav button.active {
+    background-color: #ddd;
+}
+
+.payment-options {
+    display: none;
+    align-items: center; /* Menjadikan konten sejajar secara vertikal */
+}
+
+.payment-options.active {
+    display: flex;
+    flex-wrap: wrap; /* Menyusun konten menjadi beberapa baris jika tidak cukup lebar */
+}
+
+.payment-group {
+    padding: 20px;
+    width: 100%;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center; /* Menjadikan konten sejajar secara vertikal */
+    justify-content: space-between; /* Menjadikan konten sejajar secara horizontal */
+    flex: 1 1 150px;
+    max-width: 200px;
+    padding: 15px;
+    margin-bottom: 15px; /* Tambahkan jarak antara opsi pembayaran */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-option input {
+    margin-right: 10px;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%; /* Menjadikan label menempati seluruh ruang tersedia */
+}
+
+.payment-option img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.payment-option button {
+    margin-left: auto; /* Tombol "Pilih" akan selalu berada di sebelah kanan */
+}
+
+.payment-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-option:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .payment-nav button {
+        width: 50%;
+    }
+
+    .payment-group {
+        padding: 15px;
+    }
+
+    .payment-option {
+        padding: 10px;
+    }
+}
